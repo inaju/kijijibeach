@@ -6,7 +6,7 @@ import { AiFillStar } from "react-icons/ai"
 interface hotelCardProps {
     title: String;
     starNo: Number;
-    price: Number;
+    price: any;
 }
 const HotelCard = ({ title, starNo, price }: hotelCardProps) => {
     return (
