@@ -10,7 +10,7 @@ interface hotelCardProps {
 }
 const HotelCard = ({ title, starNo, price }: hotelCardProps) => {
     return (
-        <div className=' w-full md:max-w-[250px]  shadow-2xl rounded-br-2xl  rounded-bl-2xl rounded-tl-2xl'>
+        <div className=' w-full md:max-w-[250px]  shadow-xl rounded-br-2xl  rounded-bl-2xl rounded-tl-2xl'>
             <div className='max-h-[276px] w-full h-[200px]'>
             
                 <Image 
@@ -22,13 +22,11 @@ const HotelCard = ({ title, starNo, price }: hotelCardProps) => {
                 <div className="flex">
 
                     {[...Array.from(Array(starNo).keys())].map(i =>
-
                         <div><AiFillStar color="#F68209" />
                         </div>
                     )}
                 </div>
                 <div className="grow-0 w-fit bg-brand">
-
                     <div className="px-4 py-2 text-white font-bold">${price}/day</div>
                 </div>
             </div>

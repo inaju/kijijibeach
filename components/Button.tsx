@@ -1,6 +1,8 @@
 import React from 'react'
 interface buttonProps {
     text: String;
+    icon?: String;
+    color?: String;
 }
 export default function Button({ text }: buttonProps) {
     return (

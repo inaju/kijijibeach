@@ -1,12 +1,17 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Footer from '../components/Footer'
+import FooterCta from '../components/FooterCta'
 import Hero from '../components/Hero'
 import Navbar from '../components/Navbar'
+import Testimonials from '../components/Testimonials'
 import Vacation from '../components/Vacation'
 import Welcome from '../components/welcome'
+import SocialFooter from '../components/SocialFooter'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+  const beachName = 'Kijiji Beach'
   return (
     <div >
       <Head>
@@ -15,10 +20,23 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-     <Navbar />
-     <Hero />
-     <Welcome />
-     <Vacation />
+
+      <Navbar />
+      <Hero beachName={beachName} />
+      <div className='max-w-[400px] m-auto px-4'>
+
+        <Welcome beachName={beachName} />
+        <Vacation beachName={beachName} />
+        <Testimonials />
+
+      </div>
+      <FooterCta />
+      <div className='max-w-[400px] m-auto px-4'>
+
+        <Footer beachName={beachName} />
+
+      </div>
+      <SocialFooter beachName={beachName} />
     </div>
   )
 }

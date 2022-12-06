@@ -9,7 +9,7 @@ function Navbar() {
 
             <div className=''>
 
-                <ul className={`${showNav ? 'block' : 'hidden'} flex flex-col pl-8 pt-[25%] gap-4 text-white font-semibold absolute top-0 w-full h-screen bg-gray-700 z-10 `}>
+                <ul className={`${showNav ? 'block' : 'hidden'} flex flex-col pl-8 pt-[25%] gap-4 text-white text-2xl font-semibold absolute top-0 w-full h-screen bg-gray-700 z-10 `}>
                     <li>
                         <a href='#home'>Home</a>
                     </li>
@@ -32,7 +32,7 @@ function Navbar() {
                     {!showNav ?
                         <FaBars size={20} color="white" />
                         :
-                        <GrClose size={20} color="white" className='text-white'/>
+                        <GrClose size={20} color="white" className='text-white' />
                     }
 
                 </div>
