@@ -82,12 +82,12 @@ export default function MultipleItems() {
       price: 100,
       img: bedroom_1,
     },
-    {
-      title: "Family World",
-      starNo: 2,
-      price: 1300,
-      img: bedroom_2,
-    },
+    // {
+    //   title: "Family World",
+    //   starNo: 2,
+    //   price: 1300,
+    //   img: bedroom_2,
+    // },
     {
       title: "Children World",
       starNo: 3,
