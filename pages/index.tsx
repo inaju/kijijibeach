@@ -19,11 +19,9 @@ export default function Home() {
         <meta name="description" content="best beach" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-
       <Navbar />
       <Hero beachName={beachName} />
-      <div className='max-w-[400px] m-auto px-4'>
+      <div className='max-w-[400px] m-auto px-4 sm:max-w-full sm:px-10 md:px-18 md:max-w-[1140px] '>
 
         <Welcome beachName={beachName} />
         <Vacation beachName={beachName} />
@@ -31,12 +29,13 @@ export default function Home() {
 
       </div>
       <FooterCta />
-      <div className='max-w-[400px] m-auto px-4'>
+      <div className='max-w-[400px] m-auto px-4 md:max-w-[1140px]'>
 
         <Footer beachName={beachName} />
 
       </div>
       <SocialFooter beachName={beachName} />
+      
     </div>
   )
 }

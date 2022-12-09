@@ -5,9 +5,9 @@ import manprofile from "../assets/heromobile.png"
 const TestimonialCard = () => {
     return (
         <div>
-            <div className=" max-w-[384px] max-h-[250px] rounded-2xl shadow-lg flex flex-col  bg-white p-4">
+            <div className=" sm:max-w-[300px] max-h-[250px] md:max-w-full  rounded-2xl shadow-lg flex flex-col  bg-white p-4 ">
 
-                <div className="flex flex-row justify-between items-center">
+                <div className="flex flex-row justify-between items-center ">
                     <div className='flex flex-row gap-x-4 pt-2'>
 
                         <div className="w-10 h-10 rounded-full border">
@@ -24,7 +24,7 @@ const TestimonialCard = () => {
                     </span>
                 </div>
 
-                <p className='pt-6 pb-4 text -[1rem] text-ellipsis text-gray-400 text-md '>
+                <p className='pt-6 pb-4 text -[1rem] text-ellipsis text-gray-400 text-md italic'>
                 “very exclusive service. really a very comfortable hotel the mattress is very soft like the rendang meat that I met yesterday“</p>
             </div>
         </div>

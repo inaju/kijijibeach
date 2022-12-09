@@ -8,11 +8,11 @@ interface socialFooterProps {
 }
 function SocialFooter({ beachName }: socialFooterProps) {
     return (
-        <div className="mt-16  bg-brand p-4 w-full ">
-            <div className="flex flex-col justify-between items-center px-4  text-white">
+        <div className="mt-16  bg-brand p-4 w-full: ">
+            <div className="flex flex-col  md:flex-row justify-between items-center px-4  text-white">
 
                 <p>© 2022 {beachName} All rights reserved.</p>
-                <div className="flex gap-2 pt-1">
+                <div className="flex gap-2 pt-1 hover:cursor-pointer">
                     <Image src={instagramicon} alt="" />
                     <Image src={FacebookIcon} alt="" />
                     <Image src={TwitterIcon} alt="" />

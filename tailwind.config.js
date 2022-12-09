@@ -6,6 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        xsm: '300px',
+       
+      },
       colors:{
         brand:'#F4694C'
       },
